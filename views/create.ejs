@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Orders</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/create">Create Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/list">Orders List</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/list">Orders</a></li>
+    <li class="breadcrumb-item">Add</li>
+  </ol>
+  <h4>Add Order</h4>
+  <form action="/add" method="post">
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="title" class="form-control" name="title" id="title" required>
+    </div>
+
+    <label for="body">Status</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+      </div>
+      <select class="custom-select" id="body" name="body">
+        <option selected>Choose...</option>
+        <option value="Completed">Completed</option>
+        <option value="Pending">Pending</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Order</button>
+
+  </form>
+</div>
+
