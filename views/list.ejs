@@ -36,7 +36,10 @@
         </thead>
         <tbody>
 
-        <% orders.forEach(function (order) { %>
+        <%
+        if (orders > 0) {
+        orders.forEach(function (order) {
+          %>
             <tr>
                 <td> <%= order.id %> </td>
                 <td> <%= order.title %> </td>
@@ -48,7 +51,11 @@
                     </form>
                 </td>
             </tr>
-        <% }) %>
+        <% }) } else { %>
+
+        <div>No Orders</div>
+
+        <% } %>
 
         </tbody>
     </table>
