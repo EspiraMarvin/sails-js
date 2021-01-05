@@ -51,9 +51,11 @@ module.exports = {
       // url: 'mysql://user:password@host:port/database',
 
       adapter: 'sails-postgresql',
+      url:'postgres://szolgexocuvkbi:2073feada3452600fd8b84ff39301af5c3d143e5b3fb3f8a0b1f8573c86af2aa@ec2-52-71-107-99.compute-1.amazonaws.com:5432/dbcsthv3g87l0k'
+
       // url: 'mysql://user:password@host:port/database',
       // url: process.env.DATABASE_URL
-      DATABASE_URL:"postgres://szolgexocuvkbi:2073feada3452600fd8b84ff39301af5c3d143e5b3fb3f8a0b1f8573c86af2aa@ec2-52-71-107-99.compute-1.amazonaws.com:5432/dbcsthv3g87l0k"
+      // DATABASE_URL:"postgres://szolgexocuvkbi:2073feada3452600fd8b84ff39301af5c3d143e5b3fb3f8a0b1f8573c86af2aa@ec2-52-71-107-99.compute-1.amazonaws.com:5432/dbcsthv3g87l0k"
       // url: 'postgresql://postgres:12345678@localhost:5432/articles',
 
       //--------------------------------------------------------------------------
