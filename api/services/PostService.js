@@ -1,3 +1,9 @@
+// const Post = require('./posts.json');
+//
+// module.exports.getAll = function() {
+//   return orders;
+// }
+//
 // const list = (req, res) => {
 //   Post.find({}).exec((err, orders) => {
 //     if (err){
